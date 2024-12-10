@@ -9,7 +9,7 @@ const DATABASE_URL =
 process.env.DATABASE_URL === undefined ? databasePath : process.env.DATABASE_URL
 module.exports = {
   VERSION: require('./package.json').version,
-  SESSION_ID: (process.env.SESSION_ID || '').trim(),
+  SESSION_ID: (process.env.SESSION_ID || 'levanter_11b4336c7dacd841a3bb190f492f134b73).trim(),
   DATABASE:
     DATABASE_URL === databasePath
       ? new Sequelize({
@@ -28,11 +28,11 @@ module.exports = {
           logging: false,
         }),
   PREFIX: (process.env.PREFIX || '^[.,!]').trim(),
-  SUDO: process.env.SUDO || '',
-  HEROKU_APP_NAME: process.env.HEROKU_APP_NAME,
-  HEROKU_API_KEY: process.env.HEROKU_API_KEY,
+  SUDO: process.env.SUDO || '+254715476990',
+  HEROKU_APP_NAME: process.env.Young67ke,
+  HEROKU_API_KEY: process.env.Young67ke,
   BRANCH: 'master',
-  STICKER_PACKNAME: process.env.STICKER_PACKNAME || '❤️,LyFE',
+  STICKER_PACKNAME: process.env.STICKER_PACKNAME || '❤️,Young67ke',
   ALWAYS_ONLINE: process.env.ALWAYS_ONLINE,
   LOG_MSG: process.env.LOG_MSG || 'false',
   RMBG_KEY: process.env.RMBG_KEY || 'null',
@@ -53,9 +53,9 @@ module.exports = {
   AUTO_STATUS_VIEW: (process.env.AUTO_STATUS_VIEW || 'false').trim(),
   SEND_READ: process.env.SEND_READ,
   KOYEB: toBool(process.env.KOYEB),
-  KOYEB_NAME: (process.env.KOYEB_NAME || '').trim(),
+  KOYEB_NAME: (process.env.KOYEB_NAME || 'Young67ke').trim(),
   KOYEB_API: (process.env.KOYEB_API || '').trim(),
-  AJOIN: process.env.AJOIN || 'false',
+  AJOIN: process.env.AJOIN || 'true',
   GPT: (process.env.GPT || 'free').trim(),
   MODEL: (process.env.MODEL || 'gpt-3.5-turbo').trim(),
   APPROVE: (process.env.APPROVE || '').trim(),
